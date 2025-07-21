@@ -1,0 +1,214 @@
+/* Base styles */
+body {
+    background: #232a3a;
+    color: #eaf2fb;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for entire page */
+.container {
+    width: 820px;
+    margin: 40px auto;
+    background: #27324a;
+    border-radius: 18px;
+    padding: 38px 48px;
+    box-shadow: 0 21px 34px rgba(38,41,77,0.12), 0 4px 7px rgba(5,7,22,0.10);
+}
+
+/* Flex utilities */
+.flex-row {
+    display: flex;
+}
+
+/* Header layout */
+.header {
+    align-items: flex-start;
+    gap: 32px;
+}
+
+/* Profile photo */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    background: #353c55;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Profile text info */
+.profile-info {
+    margin-top: 8px;
+}
+.profile-info h1 {
+    font-size: 2.6rem;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.profile-info h2 {
+    margin: 0 0 14px 0;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #adc5f8;
+}
+.about {
+    margin-bottom: 14px;
+    font-size: 1.02rem;
+}
+
+/* Contact & social info */
+.contact-row,
+.social-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+.contact-row span,
+.contact-row a,
+.social-row span,
+.social-row a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #b9ccec;
+    text-decoration: none;
+}
+
+/* Section titles */
+.section-title {
+    font-size: 1.10rem;
+    font-weight: 600;
+    margin: 28px 0 8px 0;
+    color: #adc5f8;
+    letter-spacing: 1px;
+}
+
+/* Skills (circle boxes) */
+.skills-circles {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.skill-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+.circle {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #223155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.09rem;
+    color: #82abff;
+    border: 2.2px solid #4261ba;
+}
+
+/* Skills (bar graphs) */
+.bar-skills {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+.bar-skill {
+    min-width: 205px;
+    background: #253350;
+    border-radius: 8px;
+    padding: 12px 17px 9px 17px;
+    color: #eaf2fb;
+    margin-bottom: 10px;
+}
+.bar-label {
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+.bar-outer {
+    background: #1a2230;
+    border-radius: 5px;
+    height: 9px;
+    width: 100%;
+}
+.bar-inner {
+    height: 9px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #64b6f9 60%, #8792d2 100%);
+}
+.value-label {
+    float: right;
+    color: #a5d5ff;
+    font-size: 0.97em;
+}
+
+/* Icon lists */
+.icon-list,
+.hobbies,
+.languages {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.icon-list span,
+.hobbies span,
+.languages span {
+    font-size: 1rem;
+    color: #adc5f8;
+}
+
+/* Mini sections and descriptors */
+.mini-section {
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+    color: #b9ccec;
+}
+
+/* Timeline and highlights */
+.timeline {
+    margin-bottom: 14px;
+}
+.timeline-entry {
+    margin-bottom: 8px;
+    color: #eaf2fb;
+}
+.highlights-list {
+    margin-bottom: 10px;
+}
+.highlights-list li {
+    margin-bottom: 3px;
+    color: #a3c4e4;
+    font-size: 0.99rem;
+}
+
+/* Education and certifications */
+.edu-entry,
+.cert-entry {
+    margin-bottom: 4px;
+    color: #b1cdf4;
+}
+
+/* Responsive layout */
+@media (max-width: 1000px) {
+    .container {
+        width: 99vw;
+        padding: 8px;
+    }
+    .flex-row {
+        flex-direction: column;
+    }
+}
